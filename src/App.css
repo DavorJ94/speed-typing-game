@@ -22,6 +22,8 @@ button {
   background: #00b800;
   padding: 10px 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.25s ease;
 }
 
 h1 {
@@ -38,4 +40,16 @@ textarea {
   height: 200px;
   background: #00b800;
   padding: 10px;
+}
+button:hover {
+  transform: scale(1.1);
+}
+textarea:disabled,
+button:disabled {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+button:disabled:hover {
+  cursor: auto;
+  transform: scale(1);
 }
